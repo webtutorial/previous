@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <script src="../js/jquery.js"></script>
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+                $("nav").load("navigation.html");
+            });
+        </script>
+        <link href="../style.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+        <script src="../js/js.js"></script>
+		<script src="lesson1.js"></script>
+        <div id="header"></div>
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav></nav>
+            <div class="container-fluid">
+            <div class="col-md-12">
+                <h1>JavaScript Pertama Kita</h1>
+                <p>JavaScript dapat "<i>display</i>" data dengan berbagai cara:</p>
+                <ul>
+                    <li>
+                        Menggunakan <i>alert box</i>, menggunakan:
+                        <code>window.alert()</code> 
+                    </li>
+                    <li>
+                       Menggunakan HTML sebagai <i>output</i> menggunakan:
+                        <code>document.write()</code>
+                    </li>
+					 <li>
+                        Menggunakan HTML <i>element</i>, menggunakan:
+                        <code>innerHTML</code> 
+                    </li>
+                </ul>
+                <hr/>
+            </div>
+            <div id="latarbelakangwarna">
+                <div class="col-sm-12">
+                    <p>Kamu dapat menggunakan cara <i>alert box</i>:
+					  Contoh : <code>alert("value");</code> / alert("abc");
+                    </p>
+                    <div class="col-sm-6">
+                        <textarea id="nilai_awal" class="nilai col-sm-12"></textarea>
+                    </div>
+                    <div class="col-sm-6">
+					<div id="script_hasil_nilai"></div>
+                        <textarea id="hasil_nilai" class="hasil_nilai form-control col-sm-12"></textarea>
+                    </div>
+					<div class="col-sm-12">
+                        <button class="btn btn-default lewati">Lewati</button>
+                    </div>
+					
+					<h1>JavaScript Kedua Kita</h1>
+						<p>JavaScript <i>Programs</i>:</p>
+						<ul>
+							<li>
+								Dapat digunakan sebagai program aritmatika. 
+							</li>
+							<p>
+							   Contoh:
+								<code><p>&lt;script&gt;</p>
+											<p>var x, y, z;</p>
+											<p>x = 5;</p>
+													</p>y = 6;</p>
+											<p>z = x + y;</p>
+											<p>document.getElementById("demo").innerHTML = z;</p>
+											&lt;/script&gt; </code>
+							</p>
+						</ul>
+						<hr/>	
+					
+                    <p>You can use an alert box to display data:
+					  Contoh : <code>alert("value");</code> / alert("abc");
+                    </p>
+                    <div class="col-sm-6">
+                        <textarea id="nilai_awal" class="nilai col-sm-12"></textarea>
+                    </div>
+                    <div class="col-sm-6">
+					<div id="script_hasil_nilai"></div>
+                        <textarea id="hasil_nilai" class="hasil_nilai form-control col-sm-12"></textarea>
+                    </div>
+					<div class="col-sm-12">
+                        <button class="btn btn-default lewati">Lewati</button>
+                    </div>
+				
+					<h1>Using window.alert()</h1>
+						<p>JavaScript can "display" data in different ways:</p>
+						<ul>
+							<li>
+								Writing into an alert box, using 
+								<code>window.alert()</code> 
+							</li>
+							<li>
+							   Writing into the HTML output using:
+								<code>document.write()</code>
+							</li>
+							 <li>
+								Writing into an HTML element, using 
+								<code>innerHTML</code> 
+							</li>
+							<li>
+							   Writing into the browser console, using:
+								<code>console.log()</code>
+							</li>
+						</ul>
+						<hr/>	
+				
+                    <p>You can use an alert box to display data:
+					  Contoh : <code>alert("value");</code> / alert("abc");
+                    </p>
+                    <div class="col-sm-6">
+                        <textarea id="nilai_awal" class="nilai col-sm-12"></textarea>
+                    </div>
+                    <div class="col-sm-6">
+					<div id="script_hasil_nilai"></div>
+                        <textarea id="hasil_nilai" class="hasil_nilai form-control col-sm-12"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="footer"></div>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

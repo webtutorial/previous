@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <script src="../js/jquery.js"></script>
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+                $("nav").load("navigation.html");
+                $("#footer").load("../footer.html");
+            });
+        </script>
+        <link href="../style.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+        <link href="lesson1.css" rel="stylesheet"/>
+        <script src="lesson1.js"></script>
+        <div id="header"></div>
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav></nav>
+            <div class="container-fluid">
+                <div class="col-md-12">
+                    <h1>Background Color</h1>
+                    <p>Property CSS background berguna untuk menentukan Efek latar belakang pada suatu elemen HTML.
+                    Property yang biasa digunakan dalam CSS Background antara lain :</p>
+                    <ul>
+                        <li>
+                            latar belakang warna yaitu dengan 
+                            <code>background-color</code> 
+                            atau 
+                            <code>background</code> 
+                            saja
+                        </li>
+                        <li>
+                            latar belakang gambar yaitu dengan
+                            <code>background-image</code>
+                        </li>
+                    </ul>
+                    <hr/>
+                </div>
+                <div id="latarbelakangwarna">
+                    <div class="col-sm-12">
+                        <p>Sekarang Anda akan membuat background color pada suatu element HTML. 
+                            Pada contoh dibawah ini, ubah warna latar belakang dari css selektor <code>#latarbelakang</code> 
+                            menjadi hijau dengan menambahkan properti css dengan nama properti <code>background</code> dan value properti <code>green</code>. <br/>
+                            Contoh : <code>#selektor{property:value}</code>
+                        </p>
+
+                        <div class="col-sm-6">
+                            <textarea id="asalkode-background-color" class="asalkode form-control col-sm-12">#latarbelakang{}</textarea>
+                        </div>
+                        <div class="col-sm-6">
+                            <style id="style-latarbelakang"></style>
+                            <p id="latarbelakang" class="hasilkode form-control col-sm-12"></p>
+                        </div>
+                        <div class="col-sm-12">
+                            <button class="btn btn-default lewati">Lewati</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="latarbelakanggambar">
+                    <div class="col-sm-12">
+                        <p>
+                            Selanjutnya membuat background image, atur element <code>#backgroundgambar</code> 
+                            memiliki background berupa gambar <span rel="popover" data-content="" data-image="../images/webtutorial-logo.png">ini</span>.
+                            Caranya adalah dengan menambahkan kode properti <code>background-image : url("lokasi-background")</code>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- masukkan konten di sini -->
+            <div id="limiter"></div>
+            <div id="footer"></div>
+        </div>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>        
+        <script>
+            $("span[rel=popover]").popover({
+                html:true,
+                trigger:'click',
+                placement : 'top',
+                content : function()
+                {
+                    return '<img src="'+ $(this).data('image')+ '"/>';
+                }
+            });
+        </script>
+    </body>
+</html>

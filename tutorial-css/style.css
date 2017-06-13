@@ -1,0 +1,11 @@
+body{
+    background: url("../images/graphic-design-studio-1563080__340.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#wrapper{
+    background: rgba(255,255,255,0.7);
+}
+.img-contoh{
+    max-width: 150px;
+}

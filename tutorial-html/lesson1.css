@@ -1,0 +1,9 @@
+/*
+ * HIDE DISPLAY
+*/
+#italic,
+#underline,
+#paragraf,
+#lesson1-selesai{
+    display: none;
+}

@@ -1,0 +1,7 @@
+span[rel="popover"]{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#latarbelakanggambar{
+    display: none;
+}

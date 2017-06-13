@@ -1,0 +1,8 @@
+body{
+    background: url("../images/code-820275__340.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#wrapper{
+    background-color: rgba(255,255,255,0.8);
+}

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script src="js/jquery.js"></script>
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+                $("nav").load("navigation.html");
+            });
+        </script>
+        <div id="header"></div>
+        <link href="style.css" rel="stylesheet"/>
+        <link href="top-style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav></nav>
+            <div class="container wrapper" id="sambutan">
+                <div class="col-sm-3">
+                    <img src="images/webtutorial-logo.png" class="trumbnail" id="logo-webtutorial"/>
+                </div>
+                <div class="col-sm-9">
+                    <h1>Selamat datang di E-Learning Web Tutorial.</h1>
+                        <p>
+                            Di situs ini, Anda akan diberikan pelatihan dasar tentang cara menulis kode dengan benar. 
+                            Tutorial yang akan disajikan begitu sederhana agar mudah dimengerti bagi pemula.
+                    <button id="lihat-video" class="btn btn-primary" data-toggle="collapse" data-target="#video-webtutorial">Lihat Video</button>
+                        </p>
+                    <hr/>
+                </div>
+            </div>
+            <div class="container wrapper">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <center>
+                            Pilih Bahasa
+                        </center>
+                    </div>
+                    <div class="panel-body" id="pilihbahasa">
+                        <div class="col-sm-4"><a class="html" href="tutorial-html/index.html">HTML</a></div>
+                        <div class="col-sm-4"><a class="css" href="tutorial-css/index.html">CSS</a></div>
+                        <div class="col-sm-4"><a class="js" href="tutorial-js/index.html">JAVASCRIPT</a></div>
+                        <div class="col-sm-12">
+                        </div>
+                    </div>
+                </div>
+                <div id="video-webtutorial" class="collapse">
+                    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/OvVH-Ux3ghU" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="limiter"></div>
+            <div id="footer"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <script src="../js/jquery.js"></script>
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+                $("nav").load("navigation.html");
+                $("#footer").load("../footer.html");
+            });
+        </script>
+        <link href="style.css" rel="stylesheet"/>
+        <link href="lesson2.css" rel="stylesheet"/>
+        <script src="../js/js.js"></script>
+        <script src="lesson2.js"></script>
+        <div id="header"></div>
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav></nav>
+            <div class="container-fluid">
+                <div class="col-sm-12">
+                    <h1>Menggunakan Heading</h1>
+                    <p>Dalam HTML, terdapat 6 macam heading mulai dari heading 1 hingga 6. <code>&lt;h1&gt;</code> mendefinisikan huruf judul yang paling besar, dan <code>&lt;h6&gt;</code> yang terkecil. Untuk latihan coba kamu pelajari dibawah ini dan perhatikan hasilnya.
+					Untuk membuat heading,
+                        caranya adalah membuat suatu kata atau kalimat berada di dalam tag heading. 
+                        contohnya adalah seperti ini: 
+                    <code>&lt;h1&gt;heading 1&lt;/h1&gt;</code></p>
+                    <hr/>
+                    <p>Pada tutorial ini, buat kalimat "Latihan Pertama itu menyenangkan" menjadi <code>heading 1</code></p>
+                </div>
+                <div id="heading1">
+                    <div class="col-sm-6">
+                        <textarea id="asalkode" class="asalkode form-control col-sm-12">Latihan pertama itu menyenangkan</textarea>
+                    </div>             
+                    <div class="col-sm-6">
+                        <p id="hasilkode" class="hasilkode"></p>
+                    </div>
+                    <div class="col-sm-12">
+                        <button class="btn btn-default" id="lewati-heading1">Lewati</button>
+                    </div>
+                </div>
+                <div id="heading-all">
+                    <div class="col-sm-12">
+                        <p>
+                            Selanjutnya, coba untuk membuat heading yang sama, yaitu heading 2 hingga 6. 
+                            Berikut ini petunjuk untuk membuat heading:
+                        </p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Kalimat</th>
+                                    <th>Heading</th>
+                                </tr>
+                                <tr>
+                                    <td>Latihan kedua juga menyenangkan</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Latihan ketiga tak kalah menyenangkan</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Latihan keempat masih begitu menyenangkan</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Latihan kelima asyik banget</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Latihan keenam paling keren</td>
+                                    <td>6</td>
+                                </tr>
+                            </table>
+                    </div>
+                    <div class="col-sm-6">
+                        <textarea id="asalkode" class="asalkode form-control col-sm-12">
+    Latihan kedua juga menyenangkan
+    Latihan ketiga tak kalah menyenangkan
+    Latihan keempat masih begitu menyenangkan
+    Latihan kelima asyik banget
+    Latihan keenam paling keren</textarea>
+                    </div>             
+                    <div class="col-sm-6">
+                        <p id="hasilkode" class="hasilkode"></p>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-default" id="heading-skip">Lewati</button>
+                </div>
+                <div class="col-sm-12" id="heading-selesai">
+                    <p>Sekarang, Anda sudah bisa menggunakan tag heading, mari lanjutkan ke tutorial berikutnya</p>
+                    <a class="btn btn-success" href="lesson3.html">Lanjut!</a>
+                </div>
+            </div>
+            <div id="limiter"></div>
+            <div id="footer"></div>
+            <script src="../bootstrap/js/bootstrap.min.js"></script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    background: url("images/person-writing.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#wrapper{
+    background: rgba(255,255,255,0.3);
+}
+#pilihbahasa div{
+    text-align: center;
+    color: white;
+    font-size: 18;
+}
+#pilihbahasa > div > a{
+    display: block;
+    line-height: 100px;
+    height: 100px;
+    color: white;
+}
+.panel{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.html,
+.css,
+.js{
+    background: #34495e
+}
+.html:hover{
+    background: #1abc9c
+}
+.css:hover{
+    background: #9b59b6
+}
+.js:hover{
+    background: #BA3627
+}
+#lihat-video{
+    margin: 5px 0;
+}
+@media(max-width:500px){
+    #video-webtutorial > iframe{
+        width: 100%;
+        height: 250px;
+    }
+}
